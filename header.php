@@ -9,7 +9,7 @@
 
         <?php if (isset($_SESSION['u_id'])) { ?>
 
-          <li><form class="logout-form" action="includes/logout.inc.php" method="post"><a class="waves-effect waves-light" type="submit" name="submit">Logout</a></form></li>
+          <li><form class="logout-form" action="includes/logout.inc.php" method="post"><button class="waves-effect waves-light btn" type="submit" name="submit">Logout</button></form></li>
 
         <?php } else { ?>
 

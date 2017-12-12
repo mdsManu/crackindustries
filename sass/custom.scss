@@ -12,6 +12,56 @@
 // Logout form
 .logout-form {
   button {
-    
+
+  }
+}
+
+// ====================
+//      Movie Page
+// ====================
+.text-ident {
+  margin-left: 20px;
+}
+
+.video-meta-head {
+  font-weight: bold;
+}
+
+.fsk {
+  margin-left: 0px;
+}
+
+.big-btn {
+  width: 80%;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #F44336;
+  text-align: center;
+  padding: 10px 0;
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    color: #000;
+    background-color: #EF9A9A;
+  }
+}
+
+.similar-movie-slider {
+
+
+  .left-prev-slider-arrow {
+    position: absolute;
+    left: 200px;
+    margin-top: 150px;
+    font-size: 5rem;
+    cursor: pointer;
+  }
+
+  .right-prev-slider-arrow {
+    position: absolute;
+    right: 200px;
+    margin-top: 150px;
+    font-size: 5rem;
+    cursor: pointer;
   }
 }

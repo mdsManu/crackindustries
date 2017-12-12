@@ -2,25 +2,28 @@
 
   <!-- Header Navbar -->
 
-  <nav class="red">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo" style="margin-left: 10px">Crackindustries</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <div class="navbar-fixed">
+    <nav class="red">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo" style="margin-left: 10px">Crackindustries</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-        <?php if (isset($_SESSION['u_id'])) { ?>
+          <?php if (isset($_SESSION['u_id'])) { ?>
 
-          <li><form class="logout-form" action="includes/logout.inc.php" method="post"><button class="waves-effect waves-light btn" type="submit" name="submit">Logout</button></form></li>
+            <li><form class="logout-form" action="includes/logout.inc.php" method="post"><button class="waves-effect waves-light btn" type="submit" name="submit">Logout</button></form></li>
 
-        <?php } else { ?>
+          <?php } else { ?>
 
-          <li><a class='waves-effect waves-light modal-trigger' href='#login-modal'>Login</a></li>
-          <li><a class='waves-effect waves-light modal-trigger' href='#register-modal'>Register</a></li>
+            <li><a class='waves-effect waves-light modal-trigger' href='#login-modal'>Login</a></li>
+            <li><a class='waves-effect waves-light modal-trigger' href='#register-modal'>Register</a></li>
+            <li><a class="waves-effect waves-light modal-trigger" href="#search"><i class="material-icons">search</i></a></li>
 
-        <?php } ?>
+          <?php } ?>
 
-      </ul>
-    </div>
-  </nav>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 </header>
 

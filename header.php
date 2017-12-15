@@ -2,27 +2,98 @@
 
   <!-- Header Navbar -->
 
-  <nav class="red">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo" style="margin-left: 10px">Crackindustries</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <div class="navbar-fixed">
+    <nav class="red">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo" style="margin-left: 10px">Crackindustries</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-        <?php if (isset($_SESSION['u_id'])) { ?>
+          <?php if (isset($_SESSION['u_id'])) { ?>
 
-          <li><form class="logout-form" action="includes/logout.inc.php" method="post"><button class="waves-effect waves-light btn" type="submit" name="submit">Logout</button></form></li>
+            <li><a href="#!" class="dropdown-trigger" data-target="profile-dropdown"><i class="material-icons">person_pin</i></a></li>
+            <li><a href="#!" class="dropdown-trigger" data-target="notifications-dropdown"><i class="material-icons">notifications_none</i></a></li>
+            <li><form class="logout-form" action="includes/logout.inc.php" method="post"><button class="waves-effect waves-light btn" type="submit" name="submit">Logout</button></form></li>
 
-        <?php } else { ?>
+          <?php } else { ?>
 
-          <li><a class='waves-effect waves-light modal-trigger' href='#login-modal'>Login</a></li>
-          <li><a class='waves-effect waves-light modal-trigger' href='#register-modal'>Register</a></li>
+            <li><a class='waves-effect waves-light modal-trigger' href='#login-modal'>Login</a></li>
+            <li><a class='waves-effect waves-light modal-trigger' href='#register-modal'>Register</a></li>
 
-        <?php } ?>
+          <?php } ?>
 
-      </ul>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  <!-- Image Slider (Carousel) -->
+
+  <div class="carousel carousel-slider center " data-indicators="true">
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      </div>
+      <div class="carousel-item red white-text" href="#one!">
+        <h2>First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <img src="https://lorempixel.com/800/400/food/1">
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+        <h2>Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
     </div>
-  </nav>
 
 </header>
+
+<!-- ======================= -->
+<!-- DROPDOWNS -->
+<!-- ======================= -->
+<ul id="profile-dropdown" class="dropdown-content">
+  <li>
+    <a href="#!">
+      <i class="material-icons">face</i>
+      Profile
+    </a>
+  </li>
+  <li>
+    <a href="#!" class="grey-text grey-darken-2">
+      <i class="material-icons">settings</i>
+      Settings
+    </a>
+  </li>
+  <li>
+    <a href="#!" class="grey-text grey-darken-2">
+      <i class="material-icons">live_help</i>
+      Help
+    </a>
+  </li>
+  <li class="divider"></li>
+  <li>
+    <a href="#!" class="grey-text grey-darken-2">
+      <i class="material-icons">lock_outline</i>
+      Lock
+    </a>
+  </li>
+  <li>
+    <a href="#!" class="grey-text grey-darken-2">
+      <i class="material-icons">keyboard_tab</i>
+      Logout
+    </a>
+  </li>
+</ul>
+
+
+
+
+<!-- ===================== -->
+<!-- MODALS --> 
+<!-- ===================== -->
 
 <!-- Login Modal -->
 <div id="login-modal" class="modal">

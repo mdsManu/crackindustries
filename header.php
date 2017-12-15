@@ -10,14 +10,21 @@
 
           <?php if (isset($_SESSION['u_id'])) { ?>
 
+<<<<<<< HEAD
             <li><a href="#!" class="dropdown-trigger" data-target="profile-dropdown"><i class="material-icons">person_pin</i></a></li>
             <li><a href="#!" class="dropdown-trigger" data-target="notifications-dropdown"><i class="material-icons">notifications_none</i></a></li>
+=======
+>>>>>>> bd6103ae1a71a45dcd025a3a9da03ad02df285ff
             <li><form class="logout-form" action="includes/logout.inc.php" method="post"><button class="waves-effect waves-light btn" type="submit" name="submit">Logout</button></form></li>
 
           <?php } else { ?>
 
             <li><a class='waves-effect waves-light modal-trigger' href='#login-modal'>Login</a></li>
             <li><a class='waves-effect waves-light modal-trigger' href='#register-modal'>Register</a></li>
+<<<<<<< HEAD
+=======
+            <li><a class="waves-effect waves-light modal-trigger" href="#search"><i class="material-icons">search</i></a></li>
+>>>>>>> bd6103ae1a71a45dcd025a3a9da03ad02df285ff
 
           <?php } ?>
 
@@ -25,6 +32,7 @@
       </div>
     </nav>
   </div>
+<<<<<<< HEAD
   
   <!-- Image Slider (Carousel) -->
 
@@ -48,6 +56,8 @@
         <p class="white-text">This is your fourth panel</p>
       </div>
     </div>
+=======
+>>>>>>> bd6103ae1a71a45dcd025a3a9da03ad02df285ff
 
 </header>
 

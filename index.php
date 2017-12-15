@@ -11,7 +11,6 @@
   </head>
   <body>
 
-<<<<<<< HEAD
     <div id="loader-wrapper">
       <div id="loader"></div>
 
@@ -74,36 +73,6 @@
       <?php require 'footer.php'; ?>
       <!-- END FOOTER  -->
     </div>
-=======
-    <!-- START HEADER -->
-    <?php require 'header.php'; ?>
-    <!-- END HEADER  -->
-    <!-- ===================================== -->
-    <!-- START MAIN CONTENT -->
-    <div class="container">
-      <h1 class="center">Home</h1>
-
-
-      <div class="carousel carousel-slider">
-        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
-        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/2"></a>
-        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/3"></a>
-        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/4"></a>
-      </div>
-
-
-      <?php
-        if (isset($_SESSION['u_id'])) {
-          echo "You are logged im!";
-        }
-      ?>
-    </div>
-    <!-- END MAIN CONTENT -->
-    <!-- ==================================== -->
-    <!-- START FOOTER  -->
-    <?php require 'footer.php'; ?>
-    <!-- END FOOTER  -->
->>>>>>> bd6103ae1a71a45dcd025a3a9da03ad02df285ff
 
 
     <!-- JS -->
@@ -119,7 +88,6 @@
       // Modal
 
       $('.modal').modal();
-<<<<<<< HEAD
 
       // Dropdown
 
@@ -130,11 +98,6 @@
       $(document).ready(function() {
         $('.carousel.carousel-slider').carousel({fullWidth: true});
         window.setInterval(function(){$('.carousel').carousel('next')},3000)
-=======
-      $('.dropdown-trigger').dropdown({closeOnClick:false, coverTrigger:false});
-      $('.carousel.carousel-slider').carousel({
-        fulllWidth: true
->>>>>>> bd6103ae1a71a45dcd025a3a9da03ad02df285ff
       });
     </script>
 
